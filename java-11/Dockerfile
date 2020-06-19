@@ -1,4 +1,4 @@
-FROM adoptopenjdk:11-jdk-alpine
+FROM doptopenjdk/openjdk11-openj9:latest
 
 RUN apt update \
     && apt upgrade -y \
