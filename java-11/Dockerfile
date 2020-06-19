@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-buster
+FROM adoptopenjdk:11-jdk-alpine
 
 RUN apt update \
     && apt upgrade -y \
