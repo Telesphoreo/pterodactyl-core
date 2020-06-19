@@ -1,4 +1,4 @@
-FROM doptopenjdk/openjdk11-openj9:latest
+FROM adoptopenjdk/openjdk11-openj9:latest
 
 RUN apt update \
     && apt upgrade -y \
