@@ -1,8 +1,8 @@
-FROM adoptopenjdk/openjdk8-openj9:slim
+FROM adoptopenjdk/openjdk8-openj9:alpine-slim
 
-RUN apt update \
-    && apt upgrade -y \
-    && apt install -y curl ca-certificates openssl git tar bash sqlite fontconfig \
+RUN apk update \
+    && apk upgrade \
+    && apk add curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser -D -h /home/container container
 
 USER container
