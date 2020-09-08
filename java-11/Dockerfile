@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11-openj9:debian-slim
+FROM adoptopenjdk/openjdk11-openj9:slim
 
 RUN apt update \
     && apt upgrade -y \
