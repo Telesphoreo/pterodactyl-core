@@ -1,9 +1,9 @@
-FROM adoptopenjdk/openjdk8-openj9:latest
+FROM adoptopenjdk/openjdk8-openj9:debian-slim
 
 RUN apt update \
     && apt upgrade -y \
     && apt install -y curl ca-certificates openssl git tar bash sqlite fontconfig \
-    && adduser -d /home/container -m container
+    && adduser -D -h /home/container container
 
 USER container
 ENV  USER=container HOME=/home/container

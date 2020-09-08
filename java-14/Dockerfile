@@ -3,7 +3,7 @@ FROM adoptopenjdk/openjdk14-openj9:latest
 RUN apt update \
     && apt upgrade -y \
     && apt install -y curl ca-certificates openssl git tar bash sqlite fontconfig \
-    && adduser -d /home/container -m container
+    && adduser -D -h /home/container container
 
 USER container
 ENV  USER=container HOME=/home/container
