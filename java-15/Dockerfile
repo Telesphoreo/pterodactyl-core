@@ -2,7 +2,7 @@ FROM adoptopenjdk/openjdk15:x86_64-alpine-jre-15_36
 
 RUN apk update \
     && apk upgrade \
-    && apk add -y curl ca-certificates openssl git tar bash sqlite fontconfig \
+    && apk add curl ca-certificates openssl git tar bash sqlite fontconfig \
     && adduser -D -h /home/container container
 
 USER container
