@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11-openj9:alpine-slim
+FROM adoptopenjdk/openjdk11-openj9:alpine-jre
 
 RUN apk update \
     && apk upgrade \
