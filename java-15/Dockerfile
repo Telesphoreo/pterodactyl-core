@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk15:x86_64-alpine-jre-15_36
+FROM adoptopenjdk/openjdk15-openj9:alpine-jre
 
 RUN apk update \
     && apk upgrade \
